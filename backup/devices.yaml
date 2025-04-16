@@ -1,0 +1,39 @@
+# Network device inventory
+devices:
+  "PAN":
+    hosts: 
+      - host: "192.168.9.32"
+        enabled: true
+    backup_path: "/backups/pan"
+  "Fortigate":
+    hosts: 
+      - host: "192.168.9.22"
+        apiKey: "fgt_key1"
+        enabled: true
+    backup_path: "/backups/fortigate"
+  "F5_BIGIP":
+    hosts: 
+      - host: "192.168.9.36"
+        enabled: true
+    backup_path: "/backups/f5"
+  "Cisco":
+    hosts: 
+      - host: "192.168.9.37"
+        device_type: "cisco_asa"
+        enabled: false
+      - host: "192.168.9.253"
+        device_type: "cisco_ios"
+        enabled: true
+    backup_path: "/backups/cisco"
+  "HPE_Aruba":
+    hosts: 
+      - host: "192.168.9.39"
+        device_type: "hp_procurve"
+        enabled: true
+      - host: "192.168.9.40"
+        device_type: "hp_comware"
+        enabled: false
+    backup_path: "/backups/hpe"
+global_settings:
+  username: "svc_username"
+  password: "svc_passwd"
