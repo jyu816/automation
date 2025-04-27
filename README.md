@@ -9,14 +9,13 @@ including PAN, Fortigate, F5 BIG-IP, Cisco, and HPE/Aruba.
 Set up a cron job which runs "python run_backup.py" to create network configuration backup regularly.
 
 # Directory hierarchy for network configuration backup,
-'''
-backup
- |── devices.yaml
- |── .env
- |── logs
- └── backups
-      |── cisco
-      |── fgt
-      |── hpe
-      └── pan
-'''
+
+backup\
+ |── devices.yaml\
+ |── .env\
+ |── logs\
+ └── backups\
+      |── cisco\
+      |── fgt\
+      |── hpe\
+      └── pan\
