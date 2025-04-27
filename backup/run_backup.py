@@ -31,7 +31,7 @@ def runner():
     tftp_server = "192.168.19.100"
     
     for vendor in devices['devices']:
-        backup_path = f"{Path.home()}{devices['devices'][vendor]['backup_path']}"
+        backup_path = f"{Path.home()}/backup/{devices['devices'][vendor]['backup_path']}"
         if vendor == 'PAN':
             for host in devices['devices'][vendor]['hosts']:
                 if not host["enabled"]:
