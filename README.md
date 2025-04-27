@@ -14,8 +14,8 @@ backup
 |── devices.yaml  
 |── .env  
 |── logs  
-└── backups  
+|── backups  
     |── cisco  
     |── fgt  
     |── hpe  
-    └── pan  
+    |── pan  
