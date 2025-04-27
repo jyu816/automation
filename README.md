@@ -10,12 +10,12 @@ Set up a cron job which runs "python run_backup.py" to create network configurat
 
 # Directory hierarchy for network configuration backup,
 
-backup\
- |── devices.yaml\
- |── .env\
- |── logs\
- └── backups\
-      |── cisco\
-      |── fgt\
-      |── hpe\
-      └── pan\
+backup  
+|── devices.yaml  
+|── .env  
+|── logs  
+└── backups  
+    |── cisco  
+    |── fgt  
+    |── hpe  
+    └── pan  
