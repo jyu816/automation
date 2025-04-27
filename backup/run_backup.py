@@ -13,10 +13,10 @@ def load_devices(dev_file):
         return yaml.safe_load(f)
 
 def runner():
-    dev_file = Path.home() / 'python-venv' / 'network_automation' / 'backup' / 'devices.yaml'
-    env_file = Path.home() / 'python-venv' / 'network_automation' / '.env'
+    dev_file = Path.home() / 'backup' / 'devices.yaml'
+    env_file = Path.home() / 'backup' / '.env'
     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M")
-    logging = Path.home() / 'backups' / 'logs' / f'log_{timestamp}.txt'
+    logging = Path.home() / 'backup' / 'logs' / f'log_{timestamp}.txt'
     
     devices = load_devices(dev_file)
     
