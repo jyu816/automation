@@ -98,7 +98,6 @@ def runner():
           /Users/backup/backups
           
     """
-
     msg['Subject'] = subject
     msg['From'] = sender_email
     msg['To'] = receiver_email
