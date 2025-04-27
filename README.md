@@ -6,15 +6,15 @@ including PAN, Fortigate, F5 BIG-IP, Cisco, and HPE/Aruba.
   - Send a notification email after completing
 
 Here is the directory for network configuration backup,
-"""
+
 ├── backup
 │   ├── devices.yaml
-│   │── .env
+│   ├── .env
 │   ├── logs
 │   └── backups
 │       ├── cisco
 │       ├── fgt
 │       ├── hpe
 │       └── pan
-"""
-Set up a cron job to run "run_backup.py"
+
+Set up a cron job which runs "python run_backup.py" to create network configuration backup.
