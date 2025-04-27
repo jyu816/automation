@@ -7,11 +7,12 @@ including PAN, Fortigate, F5 BIG-IP, Cisco, and HPE/Aruba.
 
 Here is directory for network configuration backup,
 
-backup
+~/backup
  |- devices.yaml
+ |- logs
  |- .env
  |- backups
      |- pan
      |- fgt
-     |- ios
+     |- cisco
      |- hpe
