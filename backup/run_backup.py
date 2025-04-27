@@ -103,7 +103,7 @@ def runner():
     msg['From'] = sender_email
     msg['To'] = receiver_email
     msg.attach(MIMEText(message, 'plain'))
-    with smtplib.SMTP(host='192.168.1.161', port='25') as server:
+    with smtplib.SMTP(host='192.168.19.161', port='25') as server:
         server.send_message(msg)
 
 if __name__ == "__main__":
