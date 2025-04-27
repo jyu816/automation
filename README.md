@@ -4,13 +4,13 @@ including PAN, Fortigate, F5 BIG-IP, Cisco, and HPE/Aruba.
 ## Key Features
   - Use dotenv to store sensitive parameters
   - Use Netmiko for Cisco and HPE/Aruba
-  - Use API for PAN, Fortigate, and F5 BIG-IP
+  - Use REST API for PAN, Fortigate, and F5 BIG-IP
   - Send a notification email after completing
   - Log success/failures
 
 Set up a cron job which runs "python run_backup.py" to backup network configurations regularly.
 
-## Directory hierarchy for network configuration backup
+## Directory Structure
 <pre>
 backup
 |── devices.yaml
