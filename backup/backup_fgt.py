@@ -3,7 +3,7 @@ from urllib3.exceptions import InsecureRequestWarning
 
 def backup_fgt(device,backup_path,logging):
     requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
-    api_url = f"https://{device['host']}:8443/api/v2/monitor/system/config/backup?scope=global&destination=file"
+    api_url = f"https://{device['host']}/api/v2/monitor/system/config/backup?scope=global&destination=file"
     headers = {
         'Authorization': f"Bearer {device['apiKey']}"
     }
