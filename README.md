@@ -1,14 +1,16 @@
 # Automate Network Configuration Backup
-The collection of scripts to automatically backup network configurations on various network vendor devices, 
+The collection of scripts to automatically backup network configurations for various vendors, 
 including PAN, Fortigate, F5 BIG-IP, Cisco, and HPE/Aruba.
+## Key Features
   - Use dotenv to store sensitive parameters
   - Use Netmiko for Cisco and HPE/Aruba
   - Use API for PAN, Fortigate, and F5 BIG-IP
   - Send a notification email after completing
+  - Log success/failures
 
-Set up a cron job which runs "python run_backup.py" to create network configuration backup regularly.
+Set up a cron job which runs "python run_backup.py" to backup network configurations regularly.
 
-# Directory hierarchy for network configuration backup
+## Directory hierarchy for network configuration backup
 <pre>
 backup
 |── devices.yaml
