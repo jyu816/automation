@@ -17,9 +17,9 @@ def backup_pan(device,backup_path,logging):
         pass
     else:
         timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-        backup = f"{backup_path}/device-state_{device['host']}_{timestamp}.tgz"
+        backup = f"{backup_path}/running-config_{device['host']}_{timestamp}.xml"
         # export running-config from PAN
-        url_api = f"https://{device['host']}/api/?type=export&category=device-state&key={apiKey}"
+        url_api = f"https://{device['host']}/api/?type=export&category=configuration&key={apiKey}"
         resp = requests.request("GET", url_api, verify=False)
         with open(backup, 'wb') as f:
             f.write(resp.content)
