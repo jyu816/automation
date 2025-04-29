@@ -24,7 +24,7 @@ def backup_pan(device,backup_path,logging):
         if resp.status_code == 200:
             with open(backup, 'wb') as f:
                 for chunk in resp.iter_content(chunk_size=1024):
-                    if chunk:
+                    if len(chunk) != 0:
                         f.write(chunk)
             with open(logging, 'a') as f:
                 f.write(f"---\n\nSuccessfully run configuration backup on {device['host']}\n\n")
